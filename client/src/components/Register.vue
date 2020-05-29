@@ -15,7 +15,10 @@
     v-model="password"
     placeholder="password"/>
     <br>
-    <button>Register</button>
+    <button
+        @click="register">
+        Register
+        </button>
   </div>
 </template>
 
@@ -23,19 +26,14 @@
 export default {
   data () {
     return {
-      email: 'abc',
-      password: '123'
+      email: '',
+      password: ''
     }
   },
-  watch: {
-    email (value) {
-      console.log('email has changed', value)
+  methods: {
+    register () {
+      console.log('register button was clicked', this.email, this.password)
     }
-  },
-  mounted () {
-    setTimeout(() => {
-      this.email = 'hello world'
-    }, 1000)
   }
 }
 </script>
