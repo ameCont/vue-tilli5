@@ -32,12 +32,12 @@ export default {
     }
   },
   methods: {
-    register () {
-      AuthenticationService.register({
+    async register () {
+      const response = await AuthenticationService.register({
         email: this.email,
         password: this.password
       })
-      console.log('register button was clicked', this.email, this.password)
+      console.log(response.data)
     }
   }
 }
