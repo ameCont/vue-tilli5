@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import AuthenticationService from '@/services/AuthenticationService'
 export default {
   data () {
     return {
@@ -32,6 +33,10 @@ export default {
   },
   methods: {
     register () {
+      AuthenticationService.register({
+        email: this.email,
+        password: this.password
+      })
       console.log('register button was clicked', this.email, this.password)
     }
   }
