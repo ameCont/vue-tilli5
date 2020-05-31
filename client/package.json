@@ -2,7 +2,7 @@
   "name": "client",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "ameCont <americancont7@gmail.com>",
+  "author": "ameCont <americanCont7@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -14,9 +14,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.19.2",
     "vue": "^2.5.2",
-    "vue-router": "^3.3.2"
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
