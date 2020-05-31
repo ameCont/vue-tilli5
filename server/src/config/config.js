@@ -1,4 +1,4 @@
-module.exports = {
+module.exports.config = {
     port: process.env.PORT || 8081,
     db: {
         database: process.env.DB_NAME || 'vue',
@@ -12,7 +12,7 @@ module.exports = {
     }
 }
 
-module.exports = {
+module.exports.otherConfigs = {
     // other configs ..
     externals: {
       "sequelize": "require('sequelize')",
