@@ -1,7 +1,6 @@
 module.exports = {
   env: {
     browser: true,
-    commonjs: true,
     es6: true
   },
   extends: [
@@ -13,7 +12,8 @@ module.exports = {
     SharedArrayBuffer: 'readonly'
   },
   parserOptions: {
-    ecmaVersion: 11
+    ecmaVersion: 11,
+    sourceType: 'module'
   },
   plugins: [
     'vue'
